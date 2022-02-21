@@ -4,10 +4,10 @@ from itertools import product
 from fast_train import RBM
 from training_reconstruction import RBM_train_recon
 import functools
+from scipy.sparse import diags
 
 def QGenerator(K):#Generate Q matrix for simulation. K is the number of latent variables, we set no of items to be 3K
     Q1=np.diag([1]*K)
-    from scipy.sparse import diags
     Q2=diags([1, 1], [0,1], shape=(K, K)).toarray()
     Q3=diags([1, 1, 1], [-1, 0, 1], shape=(K, K)).toarray()
     Q=np.vstack((Q1, Q2, Q3))
