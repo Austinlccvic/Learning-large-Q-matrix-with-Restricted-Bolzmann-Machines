@@ -261,7 +261,7 @@ def exe(data, K, N, num,alpha): #parallel computing multiple CPUs, num--integer-
     return res
 
 #N=2000, rho=0.25, K=25
-N=2000*10 #2000 observations with 10 replica
+N=2000*100 #2000 observations with 100 replica
 K=25 #25 latent attributes
 J=3*K #75 items
 rho=0.25 #correlations between latent attributes
