@@ -1,0 +1,7 @@
+This project uses modified restricted Boltzmann machines, as proposed in Li, C., Ma, C., & Xu, G. (2022). Learning large Q-matrix by Restricted Boltzmann 
+machines. Psychometrika, 1-32. (https://link.springer.com/article/10.1007/s11336-021-09828-4), to estimated large Q-matrix from observational data.
+
+
+The Algorithm 1. CD-1 algorithm with L1 penalty in the paper can be found in the fast_train.py file. The cross-validation procedures developed in 
+Section 3 of the paper can be found in training_reconstruction.py file. CV_dina_rho25_K25.py is an exe file illustrate a use case for applying the method
+to DINA model data with a Q-matrix of dimension 75 by 25. The execution code enables parallel running for replicas. All the these codes are written in Python.
